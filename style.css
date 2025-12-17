@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color:orange;
+    margin-top: 5px;
+    display:flex;
+    flex-direction: row;
+    /* justify-items: center; */
+    justify-content: space-between;
+    /* height: 30%; */
+    align-items: center;
+    width: auto;
+    height: auto;
+
+}
+.navbar a{
+    color: white;
+    font-weight: 600;
+}
+input{
+    width: 400px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 10px;
+}
+a{
+    text-decoration: none;
+}
+.navbar a{
+    font-size: 18px;
+}
+
+.about-section{
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+
+    gap: 20px;
+    /* background-color: #2874f0; */
+}
+/* .main-content{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+} */
+ .main-content{
+    margin-top: 20px;
+    background-color: #f1f1f1;
+    height: auto;
+    width: auto;
+ }
+ .main-content .welcome-section{
+    text-align: center;
+    margin-bottom: 30px;
+    
+ }
+.main-content #item-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+/* h1{
+    text-align: center;
+    margin-top: 50px;
+    
+} */
+
+
+.navbar logo{
+    width: 25%;
+    height: 40%;
+
+}
+
+
