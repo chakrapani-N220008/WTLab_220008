@@ -68,11 +68,7 @@ a{
     align-items: center;
     gap: 30px;
 }
-/* h1{
-    text-align: center;
-    margin-top: 50px;
-    
-} */
+
 
 
 .navbar logo{
@@ -80,5 +76,15 @@ a{
     height: 40%;
 
 }
+.available {
+            color: green;
+            font-weight: bold;
+        }
+
+        .out {
+            color: red;
+            font-weight: bold;
+        }
+
 
 
