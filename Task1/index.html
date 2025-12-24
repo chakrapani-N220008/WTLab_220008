@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>shopora</title>
+    <title>shopKart</title>
 </head>
 <body>
     <div class="container">
-        <div class="navbar">
+        <div class="navbar grid grid-three--cols">
             <div class="logo">
-                <img src="flipkart-logo.png" alt="flipkart" width="50px" height="50px">
+                <img src="shopKartLogo.png" alt="flipkart">
             </div>
             <div class="search-bar">
                 <label for="search"></label>
-                <input type="text" placeholder="search for products,Brands and More" name="search">
+                <input type="search" placeholder="search for products,Brands and More" name="search">
             </div>
             <div class="about-section">
-                <a href="form.html">login</a>
-                <a href="table.html">cart</a>
-                <a href="#Become a seller">Become a seller</a>
-            </div>
-            <div class="profile">
-                <a href="#profile"></a>
+                <ul>
+                    <li class="login-item"><a href="form.html">login⌄</a>
+                        <div class="login-dropdown">
+                            <div class="signup">
+                                <label for="signup">New customer?</label>
+                                <button type="submit">signup</button>
+                            </div>
+                            <div class="user-info">
+                                <ul>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">shopKart Plus Zone</a></li>
+                                    <li><a href="#">Orders</a></li>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><a href="#">Rewards</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="table.html">cart</a></li>
+                    <li><a href="#Become a seller">Become a seller</a></li>
+                </ul>
             </div>
         </div>
         <div class="main-content">
             <div class="welcome-section">
-                <h1>welcome to shopora </h1>    
+                <h1>welcome to shopKart </h1>    
                 <p>your one-stop shop for everything you need!</p>
             </div>
             <div class="item-section">
@@ -39,6 +54,9 @@
                 <a href="#home-furnitre">home-furn</a>
                 <a href="#Flight-booking">Flight-booking</a>
                 <a href="#Beauty-food">Beauty-food</a>
+            </div>
+            <div class="top-items">
+                <img src="Screenshot from 2025-12-24 09-15-41.png" alt="top-deals">
             </div>
               <div class="set-audio">
                 <audio controls>

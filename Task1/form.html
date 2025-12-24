@@ -4,13 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Form</title>
-
+  <link rel="stylesheet" href="style.css">
   <style>
     * {
       box-sizing: border-box;
       font-family: Arial, Helvetica, sans-serif;
     }
-
     body {
       min-height: 100vh;
       display: flex;
@@ -18,7 +17,6 @@
       align-items: center;
       background-color: #f4f4f4;
     }
-
     .form {
       background-color: #ffffff;
       padding: 2rem;
@@ -27,48 +25,47 @@
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
-    form {
+    .form form {
       display: flex;
       flex-direction: column;
       gap: 1rem;
     }
-
-    .input-block {
+    .form .input-block {
       display: flex;
       flex-direction: column;
       gap: 0.4rem;
     }
 
-    label {
+    .form label {
       font-size: 0.95rem;
       font-weight: 600;
       color: #333;
     }
 
-    input {
+    .form input {
       padding: 0.6rem;
       border-radius: 6px;
       border: 1px solid #ccc;
       font-size: 0.95rem;
     }
 
-    input:focus {
+    .form input:focus {
       outline: none;
       border-color: #007bff;
     }
 
     /* Gender section */
-    .gender {
+    .form .gender {
       display: flex;
       align-items: center;
       gap: 1rem;
       font-size: 0.9rem;
     }
 
-    .gender input {
+    .form  .gender input {
       margin-right: 4px;
     }
-    button{
+    .form button{
         background-color: #007bff;
         color: #ffffff;
         font-size: 1.275rem;
