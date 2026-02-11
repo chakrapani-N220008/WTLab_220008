@@ -15,7 +15,7 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) == 1) {
     $row = mysqli_fetch_assoc($result);
     $dbPassword = $row['password'];
-    if (strcmp($dbPassword,$password )) {
+    if (strcmp($dbPassword,$password )==0) {
         echo "<br>Login successful";
     } else {
         echo "<br>Invalid password";
