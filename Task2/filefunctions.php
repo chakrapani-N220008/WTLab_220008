@@ -47,16 +47,27 @@ rmdir("task3");//remove directory not give error if file not exists
 echo is_file($filepath);//true or false
 echo is_dir("task2");//true or false
 echo "<h3>Directory Listing (scandir):</h3>";
-print_r(scandir("."));
+print_r(scandir("."));//returns inside file name in the form of Returns indexed array check chatgpt
 echo "<h3>Directory Listing (opendir):</h3>";
-$dir = opendir(".");
-while(($file = readdir($dir)) !== false) {
-    echo $file . "<br>";
+
+$dir=opendir(".");
+while(($file=readdir($dir))!==false){
+    echo $file."<br>";
 }
 closedir($dir);
+
 echo "<h3>Current Working Directory:</h3>";
-echo getcwd();
+echo getcwd()."<br>";
 chdir("..");
 echo "<br>Changed Directory: " . getcwd();
-
+$filePath="sample.txt";
+$handle=fread($filePath,filesize($filePath));
+if(flock($handle,LOCK_EX)){
+    echo fread($filePath,filesize($filePath))."<br>";
+    flock($handle, LOCK_UN);
+    fclose($filePath);
+}
+else {
+    echo "not locked properly";
+}
 ?>

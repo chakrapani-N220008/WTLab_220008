@@ -5,7 +5,6 @@ die("Database connection failed");
 }
 echo "Database login connected successfully";
 ?>
-
 <?php
 $email = $_POST["email"];
 $password = $_POST["password"];

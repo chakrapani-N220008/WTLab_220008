@@ -1,8 +1,13 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
 $file = "mode_test.txt";
 
-
+if(!file_exists($file)) {
+ die("file not found");
+}
+    
 $h = fopen($file, "r");
 fclose($h);
 
