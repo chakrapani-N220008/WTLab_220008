@@ -15,18 +15,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup } 
 from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
-
-const firebaseConfig = {
-    apiKey: "AIzaSyD5bQTHL4Xu7RBh06xRAXPK5gJU-dQUiKg",
-    authDomain: "shopkart-23d49.firebaseapp.com",
-    projectId: "shopkart-23d49",
-    appId: "1:690738857113:web:b6e2b7f3c15c5ab8b72408"
-};
-
+import { firebaseConfig } from "./secrets.js";
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 const provider = new GoogleAuthProvider();
-
 window.googleLogin = async function () {
     try {
         const result = await signInWithPopup(auth, provider);
