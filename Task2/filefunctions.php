@@ -7,8 +7,6 @@
 //     echo fread($fileRead,filesize($filepath));
 //     fclose($fileRead);
 // }
-
-
 // else{
 //     echo "no file found";
 // }

@@ -8,7 +8,6 @@ use Dotenv\Dotenv;
 
 $dotenv = Dotenv::createImmutable(__DIR__);
 $dotenv->safeLoad();
-
 $client_id = $_ENV['GITHUB_CLIENT_ID'];
 $client_secret = $_ENV['GITHUB_CLIENT_SECRET'];
 $redirect_uri = $_ENV['GITHUB_REDIRECT_URI'];
